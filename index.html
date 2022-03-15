@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        header{
+            background-color: rgb(2, 2, 2);
+            color: white;
+            padding: 10px;
+            text-align: center;
+           
+
+        }
+        main{
+            background-color: white;
+            max-width: 600px;
+            min-width: 250px;
+            margin: auto;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.555);
+            border-radius: 10px 10px 0px 0px ;
+        }
+        h2{
+            font-size: 10px;
+        }
+        h3{
+            background-color: rgb(44, 41, 41);
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        pre{
+            color: blue;
+        }
+        p{  text-align: justify;
+            padding: 10px;
+        }
+
+        img{
+             display: block;
+             margin: auto;
+             border-radius: 10px;
+             box-shadow:10px 10px 10px rgba(0, 0, 0, 0.555) ;
+        }
+       
+        ul{
+            
+            border-radius:10px;
+            background-color: bisque;
+            width: 200px;
+            padding: 30px;
+            margin-top: -10px;
+            margin-left: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.555);
+        }
+        .dica{
+            display: inline;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.555);
+            background-color: rgb(99, 96, 96);
+            color: black;
+            padding: 10px;
+            margin-bottom: -10px; 
+            width: 237px;
+            margin-left: 12px;
+            border-radius: 10px;
+            color: white;
+        }
+        .cabecalho{
+            border-radius: 0px;
+            background-color: rgb(44, 41, 41);
+        }
+        footer{
+          
+            margin-top: 10px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius:  0px 0px 10px 10px;
+        }
+        nav {
+            padding-top: 10px;
+            margin: auto;
+            max-width: 600px;
+            min-width: 250px; 
+            
+            }
+            .menu{
+                border-radius: 0px 0px 10px 10px;
+                padding: 10px;
+                background-color: rgb(44, 41, 41);
+            }
+         .menu:hover{
+             background-color: rgb(255, 251, 251);
+             color: black;
+         }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Estudo Javscript</h1>
+        <h2>Fonte: <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Curso em Video</a></h2>
+    </header>
+    <nav>
+        <a href="index.html" class="menu">Home</a>
+    </nav>
+    <main>
+        <h3>Oque são variaveis</h3>
+           <p>Variaveis são espaços reservados na memória para guardar dados.</p>
+           <p>Utiliza-se nomes, numeros ou letras para identificar uma variavel, como na imagem abaixo:</p>
+           <picture>
+               <img src="img01.jpg" alt="imagem-variavel">
+           </picture>
+           <p>Para guardar um valor em uma variavel em <strong>Javscript</strong> utiliza esse sinal <strong>" = "</strong> que sozinho se traduz recebe. Logo:<br>
+
+            <pre><code>
+                Vaga a1 = carro1</code></pre>
+                <picture>
+                    <img src="img02.jpg" alt="Sinal de igual significa recebe">
+                </picture>
+          <p> Se lê : vaga a1 recebe carro1.</p>
+          <p>Exemplo de variavel:</p> 
+          <pre><code>
+               > var nome ="Gustavo"
+               > undefined
+               > nomes
+               >'Gustavo'
+          </code></pre>
+
+        <h3 class="dica">Dica:</h3>
+        <ul type = "disc">
+            
+          <li><strong>Maiúsculas</strong> e <strong>minúscula</strong>s<br> fazem diferença</li>
+          <li>tente escolher nomes <br>coerentes para as variaveis</li>
+       </ul>
+  <br>
+        
+       <h3 class="dica">Identificadores:</h3>
+       <ul type = "disc">
+           <li>Podem começar com <strong>Letra</strong>, <strong>$</strong> ou<strong> _</strong></li>
+           <li>Não podem começar com <strong>números</strong></li>
+           <li>É possivel usar <strong>letras</strong> e <strong>números</strong></li>
+           <li>É possivel usar <strong>letras</strong> e <strong>números</strong></li>
+           <li>É possivel usar <strong>acentos</strong> e <strong>símbolos</strong></li>
+           <li>Não pode conter <strong>espaços</strong></li>
+           <li>Não podem ser <strong>palavras resevadas</strong></li>  
+           
+        </ul>
+        <h3 class="cabecalho">Tipos primitivos</h3>  
+        <p>o Tipo primitivo <strong>Number</strong> guarda numeros sendo eles inteiros ou reais, <strong>String</strong> guarda letras pontos e traços, e a <strong>Boolean</strong> valores como <strong>True </strong>e <strong>False</strong>.</p> 
+        <p>Para saber qual é o tipo, tem um comando em Javscript usando a ferramenta NodeJs </p>
+        <pre><code>
+            >var n = 200
+            >n
+            >200
+            >typeof n 
+            >'number'
+        </code></pre>
+           <br>
+               <h3 class="dica">Tipos    Primitivos</h3>
+        <ul type = "disc">
+            
+          <li>Number</li>
+          <li>String</li>
+          <li>Boolena</li>
+          <li>Null</li>
+          <li>undefined</li>
+          <li>Object</li>
+          <li>Function</li>
+       </ul>
+<br>
+
+    </main>
+    <footer> Feito Por Alberto Junior</footer>
+</body>
+</html>
