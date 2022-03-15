@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Estudo Javascript</h1>
+        <h2>Fonte: <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Curso em Video</a></h2>
+    </header>
+
+    <nav>
+
+        <a href="index.html" class="menu">Inicio</a> <a href="pagina2.html" class="menu">Aula 1</a>
+        <a href="pagina3.html" class="menu">Aula 2</a>
+
+
+    </nav>
+
+<main>
+    <h3>Formatação de string</h3>
+    <p>Aprendendo 3 formatações simples de string:</p>
+    <h3 class="dica">Tipos de Formatação</h3>
+    <ul>
+        <li><strong>s.lengh</strong> - vê o tamanho da string</li>
+        <li><strong>s.toUpperCase()</strong>- Deixa a string com caixa auta</li>
+        <li><strong>s.toLowerCase()</strong> - Deixa a string com minusculas</li>
+
+    </ul>
+    <p>EX:</p>
+<pre>
+   <code>
+       var nome = window.prompt('Qual é seu nome ?')
+       Document.write(`Olá,${nome}! Seu nome tem <span>${nome.length}</span>`)
+       document.write(`Seu nome em maiúsculas é <span>${nome.toUpperCase()}</span>`</code>)
+       document.write(`Seu nome em miúsculas é <span>${nome.toLowerCase()}</span>`)
+  </code>
+</pre>
+    <h3 class="cabecalho">Formatando Números</h3>
+    <P>Criando uma Variavel n1 = 1545.5 para deixar o valor com casa decimal usa-se:</P>
+    <pre>
+        <code>
+      >var n1 = 1545.5
+      >n1.toFixed(2)
+      >'1545.50'
+        </code>
+    </pre>    
+        <p>Para trocar o ponto por virgula fica assim:</p>
+    <pre>
+        <code>
+      >var n1 = 1545.5
+      >n1.toFixed(2).replace('.',',')
+      >'1545,50'
+        </code>
+    </pre>
+    <p>Como mostra esse valor em real</p>
+    <pre>
+        <code>
+       >n1.toLocaleString('pt-br',{ style: 'currency',currency:'BRL'}) 
+       >R$ 1,545.50    
+        </code>
+    </pre>
+    <h3 class="dica">Tipos de Formatação</h3>
+    <ul>
+
+        <li><strong>toFixed (2)</strong> - para mostrar o numero com casa decimal</li>
+        <li><strong>toFixed().replace('.',',')</strong>- Para trocar o ponto por virgula</li>
+        <li><strong>.LocaleString</strong>('pt-BR',{style:'currency',currency:'BRL'})</li>
+    </ul>
+    <br>
+    <script>
+       // var nome = window.prompt('Qual é o seu nome ?')
+
+        //document.write(`Seu nome tem ${nome.length} letras.`)
+
+      /* var nome = window.prompt('Qual é seu nome ?')
+       document.write(`Olá,${nome}! Seu nome tem ${nome.length}`)
+       document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+       document.write(`Seu nome em miúsculas é ${nome.toLowerCase()}`)*/
+       var n1 ='1545.5'
+       window.alert(n1.toFixed(2))
+       
+    </script>
+
+
+</main>
+
+
+<footer>
+        Criado por Alberto Junior
+</footer>
+
+</body>
+</html>

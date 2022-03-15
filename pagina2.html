@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula02</title>
+</head>
+<body>
+    <header>
+        <h1>Estudo Javascript</h1>
+        <h2>Fonte: <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Curso em Video</a></h2>
+    </header>
+    <nav>
+
+        <a href="index.html" class="menu">Inicio</a> <a href="pagina2.html" class="menu">Aula 1</a>
+        <a href="pagina3.html" class="menu">Aula 2</a>
+
+    </nav>
+
+    <main>
+        <script>
+            //window.alert('Minha primeira mensagem')
+            //window.confirm('Está gostando de JS')
+            //var nome = window.prompt('Qual é o seu nome ?')
+           // window.alert('É um grande prazer te conhecer,'+ nome)
+
+           // var n1 = Number.parseInt(window.prompt('Digite um número:'))
+           // var n2 = Number.parseInt( window.prompt ('Digite outro número'))
+           // var s = n1 + n2 
+           // window.alert('A soma dos valores é  ' + s)
+
+        </script>
+        <h3>Manipulação de Dados</h3>
+           <p>Para guardar um dado em uma variavel utiliza-se</p>
+           <p>EX:</p>
+               <pre><code>
+    var nome = window.prompt('Qual é o seu nome ?')
+    window.alert('É um grande prazer te conhecer,'+ nome) 
+                </code></pre>
+                
+                <p> Para unir os dados utiliza-se "+" Concatenação. Como mostrado no codigo acima</p>
+                
+                 
+                    <h3 class="cabecalho">Conversão String > Número</h3>
+                    <p>Para mostrar ao Javascript que o "+" não é de concatenação precisa fazer a conversão de String para Número e usado o seguinte comando:</p>
+                    <pre><code>
+                    
+     Number.parseInt (n)
+     Number.parseFloat(n)
+     Number(n)
+                 </code></pre>
+                 <p>Se não, ele vai entender que é concatenado como no codigo abaixo, ao invés de somar as variaveis, ele vai colocar os dois números dados um do lado do outro.</p>
+                 <pre><code>
+
+     var n1 = window.prompt('Digite um número:')
+
+     var n2 = window.prompt ('Digite outro número')
+
+     var s = n1 + n2 
+
+     window.alert('A soma dos valores é' + s)
+
+                 </code></pre>
+                 <p> Se colocar no primeiro (1) e no segundo (1) o resultado será (11) na forma como o código está acima.</p>
+                 <p>Para resolver isso usa-se o seguinte comando:</p>
+    <pre>
+        <code>
+
+      var n1 = <span>Number.parseInt</span><span>(</span>window.prompt('Digite um número:')<span>)</span>
+      var n2 = <span>Number.parseInt</span><span>(</span> window.prompt ('Digite outro número')<span>)</span>
+      var s = n1 + n2 
+      window.alert('A soma dos valores é  ' + s)
+
+        </code>
+    </pre>
+    <p>Dessa forma o resultado das variaveis será somado.</p>
+
+    <h3 class="cabecalho">Conversão Número > String </h3>
+
+    <p>Para converter de número para String usa-se :</p>
+    <pre>
+        <code>
+    String(N)
+    n.toString()
+       </code>
+</pre>
+           <h3 class="cabecalho">Formatando Strings</h3>
+           <p>Para usar a <strong>templatesStrings</strong> utiliza-se Craze</p>
+           <p>EX:</p>
+    <pre>
+        <code>
+     > Nome  ='Gustavo'
+     > Idade ='41'
+     > Nota  ='5.5'
+     > `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+     > <span>O aluno Gustavo com 41 anos tirou a nota 5.5</span>
+        </code>
+    </pre>
+
+
+           <h3 class="cabecalho">Comandos em Javascript</h3>
+           <p>Para criar um <strong>"alert"</strong> usa-se esse seguinte código:</p>
+           <pre>
+               <code>
+        script
+        
+    window.alert('Minha primeira mensagem')
+        
+        /script
+        
+              </code>
+          </pre>
+           <p>Para criar uma confirmação:</p>
+           <pre>
+            <code>
+        script
+        
+    window.confirm('Está gostando de JS')
+               
+        script
+           </code>
+        </pre>
+        <p>para chamar o prompt:</p>
+        
+          <pre>
+              <code>
+        script
+        
+    window.prompt('Qual é o seu nome ?')
+        
+        /script
+              </code>
+         </pre>
+
+    </main>
+    <footer> Feito Por Alberto Junior</footer>
+</body>
+
+</html>
