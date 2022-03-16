@@ -8,20 +8,40 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <script>
+        /*var nome = window.prompt('Qual é o seu nome ?')
+
+        document.write(`Seu nome tem ${nome.length} letras.`)*/
+
+      /* var nome = window.prompt('Qual é seu nome ?')
+       document.write(`Olá,${nome}! Seu nome tem ${nome.length}`)
+       document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+       document.write(`Seu nome em miúsculas é ${nome.toLowerCase()}`)*/
+      // var n1 ='1545.5'
+      // window.alert(n1.toFixed(2))
+       
+    </script>
+    <header>  <!--inicio cabeçalho-->
+
         <h1>Estudo Javascript</h1>
-        <h2>Fonte: <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Curso em Video</a></h2>
-    </header>
 
-    <nav>
+        <h2>Fonte: <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Curso em Video</a>
 
-        <a href="index.html" class="menu">Inicio</a> <a href="pagina2.html" class="menu">Aula 1</a>
+        </h2>
+
+    </header> <!--fim cabeçalho-->
+    
+    <nav> <!--Menu-->
+         
+        <a href="index.html" class="menu">Inicio</a> 
+        <a href="pagina2.html" class="menu">Aula 1</a>
         <a href="pagina3.html" class="menu">Aula 2</a>
+        <a href="pagina4.html" class="menu">Aula 3</a>
 
-
-    </nav>
-
-<main>
+    </nav> <!--Fim menu-->
+    
+<main> <!--inicio corpo-->
+    
     <h3>Formatação de string</h3>
     <p>Aprendendo 3 formatações simples de string:</p>
     <h3 class="dica">Tipos de Formatação</h3>
@@ -72,27 +92,91 @@
         <li><strong>.LocaleString</strong>('pt-BR',{style:'currency',currency:'BRL'})</li>
     </ul>
     <br>
-    <script>
-        var nome = window.prompt('Qual é o seu nome ?')
+    <h3 class="cabecalho">Operadores</h3>
+    <p>Vamos ver alguns operadores Javascript :</p>
+    <h3 class="dica">Operadores</h3>
+<ul>
+    <li>Aritiméticos
+    <li>Atribuição
+    <li>Relacionais
+    <li>Lógicos
+    <li>Ternário
+</ul>
+<br>
+    <picture>
+        <img  class="coluna"src="aritimetico.jpg" alt="operadores">
+    </picture>
+<br>
+<br>
+<h3 class="cabecalho">Ordem de precedência</h3>
 
-        document.write(`Seu nome tem ${nome.length} letras.`)
+<p>1° que estão dentro dos "( )"  2° Potência " ** "  3° Multiplicação " * ".
+    3°Divisão " / " 3°Porcento " % " 4°soma " + " 5° subtração " - ".
+</p>
+<div class="aolado">
+    <h3 class="dica">Auto-atribuição</h3>
+    <ul type="none">
+        <li>Var n = 3</li>
+        <li>n = n + 4</li>
+        <li>> 7</li>
+        <li><strong>Auto-Atibuição-Simples:</strong></li>
+        <li>n + = 4</li>
+        <li>n * = 4</li>
+        <li>n % = 4</li>
+    </ul>
+</div>
+<div class="aolado"><!--inicio incremento-->
+    <h3 class="dica">Incremento</h3>
+    <ul type="none">
+        <li>Var x = 5</li>
+        <li>x = x + 1 -- x++</li>
+        <li>x = x - 1 -- x--</li>
+        <li></li>
+        <li>var n = 10</li>
+        <li>n++</li>
+        <li>> 11 - n vale 11</li>
+        <li>.</li>
+        
+    </ul>
+</div>
+<br>
+</main> <!--Fim Corpo-->
 
-      /* var nome = window.prompt('Qual é seu nome ?')
-       document.write(`Olá,${nome}! Seu nome tem ${nome.length}`)
-       document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
-       document.write(`Seu nome em miúsculas é ${nome.toLowerCase()}`)*/
-       var n1 ='1545.5'
-       window.alert(n1.toFixed(2))
-       
-    </script>
+<footer><!--inicio rodapé-->
+<div id="corpo">
+      <div class="foto">
 
+            <picture >
 
-</main>
+                <img  id="foto"src="perfil.jpg" alt="foto">
 
+           </picture>
 
-<footer>
-        Criado por Alberto Junior
-</footer>
+      </div>
+           <div class="texto">
+
+               <p id="texto">
+
+                Autor: <br>
+                Alberto Júnior <br>
+                Araraquara-SP  Brasil <br>
+                <a class="rede" href="https://www.linkedin.com/in/alberto-monteiro-25436028/" target="_blanck"></a>
+                <a class="face" href="https://www.facebook.com/alberto.o.junior.9/" target="_blanck"></a>
+                </p>
+            
+
+            </div>  
+
+      
+
+       <div class="rodape">
+                   <p>Criado por Alberto Júnior</p> 
+               
+      </div>
+
+</div>
+
+</footer><!--fim rodapé-->
 
 </body>
 </html>
