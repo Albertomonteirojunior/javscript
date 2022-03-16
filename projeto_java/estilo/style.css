@@ -13,7 +13,7 @@ header{
     background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(75, 77, 76));
     color: white;
     padding: 10px;
-    
+    text-align: center;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.342);
    
 
@@ -26,28 +26,9 @@ main{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.555);
     border-radius: 10px 10px 0px 0px ;
 }
-
 h1{
     font-family: 'Libre Baskerville', serif;
-    margin-top: -107px;
-    margin-bottom: 65px;
-    padding-top: -100px;
-    text-align: center;
-}
 
-.header{
-    display:block;
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 30px;
-}
-.cabeca{ /*configuração do h2 do cabeçalho*/
-    margin-top: -45px;
-    margin-bottom: 55px;
-    padding-top: -100px;
-    text-align: center;
-    font-size: 10px;
-}
 }
 h2{
     font-size: 10px;
@@ -192,7 +173,7 @@ nav {
  }
     
 .rede::before {
-             content: url(icon.png);
+            content: url(icon.png);
              border-bottom: 0px;
              text-align: center;
                }
