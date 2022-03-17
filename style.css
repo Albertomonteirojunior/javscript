@@ -31,12 +31,13 @@ main{
 h1{ 
     margin: auto; /*alteração*/
     display: block;/*alteração*/
-    width: 100vh; /*alteração*/
+    width: 65vh; /*alteração valor anterior 100vh*/
     font-family: 'Libre Baskerville', serif;
     margin-top: -107px;
     margin-bottom: 65px;
     padding-top: -100px;
     text-align: center;
+    
 }
 
 .header{
@@ -55,7 +56,7 @@ header > div {
 .cabeca{ /*configuração do h2 do cabeçalho*/
     margin: auto; /*alteração*/
     display: block;/*alteração*/
-    width: 100vh; /*alteração*/
+    width: 65vh; /*alteração*/
     margin-top: -45px;
     margin-bottom: 55px;
     padding-top: -100px;
@@ -66,7 +67,7 @@ header > div {
     text-decoration: underline;
     color: yellow;
 }
-}
+
                                 /*fim docabeçalho*/
 h2{
     font-size: 10px;
