@@ -3,30 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Libre+Baskerville&display=swap');
 
-body{
-    
+body {
     background-image: linear-gradient(to top, rgb(51, 50, 50), rgb(107, 109, 107));
     font-family: Arial, Helvetica, sans-serif;
     
-}
+     }
 header{
-    
     background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(75, 77, 76));
     color: white;
     padding: 10px;
-    
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.342);
-   
-
-}
-main{
+       }
+main {
     background-color: white;
     max-width: 900px;
     min-width: 250px;
     margin: auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.555);
     border-radius: 10px 10px 0px 0px ;
-}
+     }
                             /*inicio docabeçalho*/
 h1{ 
     margin: auto; /*alteração*/
@@ -140,7 +135,7 @@ nav {
     padding-top: 10px; /*Configuração do menu*/
     margin: auto;
     max-width: 900px;
-    min-width: 250px; 
+    min-width: 500px; 
      }
 .menu{ /*Configuração do menu*/
         border-radius: 0px 0px 10px 10px;
@@ -185,7 +180,7 @@ footer { /*Configuração geral rodapé*/
 #corpo{ /*Configuração do corpo do rodape*/
          margin: auto;/*alteração*/
          display: block;/*alteração*/
-         width: 100vh;/*alteração*/
+         width: 65vh;/*alteração*/
              
 }
 .foto{ /*Configuração da imagem do rodape*/
