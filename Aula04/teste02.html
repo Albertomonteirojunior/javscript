@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #botao{
+            border: solid 1px rgb(7, 7, 7);
+            background-color: green;
+            width: 190px;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            line-height: 70px;
+            text-align: center;
+            
+        }
+        #resposta{
+
+            border: solid 1px ;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+        <div id="resposta"> <!--onde aparece a resposta-->
+            Oi, qual é seu nome ?
+        </div>
+
+<div id="img">
+        <picture>
+        <img  id="img2" src="imagens/01.png" alt="mulher maravilha">
+        </picture>
+</div>
+
+<input type="text" id="texto" id="escrever"><!--Caixa de texto-->
+<input type="button" value="enviar" id="guardar" onclick="guardar()"> <!--Botao-->
+
+
+    <script>
+          
+             
+             resposta.innerText = `ola,`
+       // var img = window.document.getElementById('img2')
+        //img.addEventListener('mouseenter', entra)
+        //img.addEventListener('mouseout',sair)
+        //img.addEventListener('click',clicar)
+
+        var escreve = window.document.getElementById('escrever') //caixa de texto
+        var guardar = window.document.getElementById('guardar') //botao enviar
+        var resposta = window.document.getElementById('resposta') // onde aparece a respota
+       escreve = 'alberto'
+        
+
+      function guardar(){
+                 
+        
+
+      }
+
+
+        function entra(){
+
+                    //img.setAttribute('src','imagens/02.png')
+                    //muda.innerHTML='Me faça uma pergunta ?'
+       }
+
+       function sair(){
+
+                   
+                    //img.setAttribute('src','imagens/01.png')
+                    //muda.innerHTML='oi posso ajudar?'
+       }
+
+       function clicar(){
+             //img.setAttribute('src','imagens/03.png')
+             //muda.innerHTML='Desculpa não sei?'
+       }
+
+    </script>
+</body>
+</html>

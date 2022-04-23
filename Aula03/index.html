@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+       <style>
+           body{
+               background-color: rgb(34, 52, 212);
+               color: white;
+               font: normal  18pt arial;
+           }
+       </style>
+</head>
+<body>
+   
+        <h1>Introdução ao Dom</h1>
+
+        <p>aqui vai o resultado</p>
+          <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+
+        <div id="msg">
+           Clique em mim
+        </div>
+
+  <script>
+         var d =window.document.getElementById('msg')
+         var corpo = window.document.body
+         var a = window.document.getElementsByTagName('p')[0]
+         window.document.write('Está escrito assim:' + d.innerHTML)
+         
+         //comando para escrever na tela a variavel
+         d.style.backgroundColor =" green"
+         d.style.border="1px solid black"
+         d.style.borderRadius="10px"
+         d.style.color = "white" // modificação por java
+
+         //corpo.style.background ='black'//alterando estilo no java
+         //window.alert(d.innerHTML)
+         
+
+  </script>
+   
+</body>
+</html>
